@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Brennan - Personal Diary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do:wght@300;400;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(45deg, #f4f1e8 0%, #e8e2d5 100%);
+            font-family: 'Nothing You Could Do', cursive;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .diary-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background:
+                repeating-linear-gradient(
+                    transparent,
+                    transparent 31px,
+                    #a8d8f0 31px,
+                    #a8d8f0 32px
+                ),
+                linear-gradient(to right,
+                    #fff 0%, #fff 50px,
+                    #fff 52px, #fff 100%
+                );
+            box-shadow:
+                0 0 20px rgba(0,0,0,0.1),
+                inset 0 0 0 1px #ddd;
+            padding: 60px 80px 60px 80px;
+            position: relative;
+            transform: rotate(-0.5deg);
+        }
+
+        .diary-header {
+            text-align: center;
+            margin-bottom: 40px;
+            font-family: 'Nothing You Could Do', cursive;
+        }
+
+        .diary-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            transform: rotate(0.2deg);
+        }
+
+        .diary-subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            font-style: italic;
+            transform: rotate(-0.1deg);
+        }
+
+        .entry {
+            margin-bottom: 35px;
+            line-height: 32px;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+
+        .entry-date {
+            font-family: 'Nothing You Could Do', cursive;
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #e74c3c;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            transform: rotate(-0.3deg);
+        }
+
+        .entry-text {
+            text-indent: 30px;
+            transform: rotate(0.1deg);
+        }
+
+        .entry-text p {
+            margin-bottom: 15px;
+        }
+
+        .important {
+            background: rgba(255, 255, 0, 0.2);
+            padding: 5px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        .underlined {
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: #3498db;
+        }
+
+        .crossed-out {
+            text-decoration: line-through;
+            color: #95a5a6;
+        }
+
+        .margin-note {
+            position: absolute;
+            right: 20px;
+            font-size: 12px;
+            color: #e74c3c;
+            font-family: 'Nothing You Could Do', cursive;
+            transform: rotate(5deg);
+            background: rgba(255, 255, 255, 0.8);
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        .entry:nth-child(odd) {
+            transform: rotate(-0.2deg);
+        }
+
+        .entry:nth-child(even) {
+            transform: rotate(0.1deg);
+        }
+    </style>
+</head>
+<body>
+<div class="diary-container">
+    <div class="entry">
+        <div class="entry-date">September 18, 1972</div>
+        <div class="entry-text">
+            <p>Found something incredible in the basement during renovations. Workers discovered a hidden compartment behind the old fermentation tanks. Inside - a leather journal, pages yellowed but readable. German text, looks like 1920s. The previous owner, <span class="underlined">Heinrich Kessler</span>, must have hidden it.</p>
+            <p>Had Noah translate some passages. <span class="important">This could be exactly what we've been looking for.</span> References to "Der Zerteiler der Schleier" - the Render of Veils. Tommy thinks I'm crazy, but the business possibilities are endless if this is real.</p>
+        </div>
+        <div class="margin-note">Show to Nora?</div>
+    </div>
+
+    <div class="entry">
+        <div class="entry-date">October 2, 1972</div>
+        <div class="entry-text">
+            <p>Nora confirmed what Noah suspected - this is legitimate occult material. She's excited, more than I've seen her in years. The four of us agreed to investigate further. <span class="crossed-out">Maybe call it "research into local history"</span> We're calling it "The Circle of the Unseen Angle."</p>
+            <p>Ordered materials from Chicago jeweler - <span class="underlined">4 silver eye pins, custom design</span>. $180 total. Tommy complained about the cost but I think having matching symbols will help with focus.</p>
+        </div>
+    </div>
+
+    <div class="entry">
+        <div class="entry-date">October 7, 1972</div>
+        <div class="entry-text">
+            <p><span class="important">TEST RUN DISASTER!</span></p>
+            <p>We were too eager. Brought Milton Chen (travel writer - lots of "knowledge" as the ritual requires) to the basement for a preliminary attempt. Just wanted to see if anything would happen. We blindfolded ourselves as precaution, but Milton saw something when the darkness shifted.</p>
+            <p>He's completely mad now. Keeps drawing maps of places that don't exist, speaks in fragments about "angles that cut through time." We moved him to the <span class="underlined">hunting lodge</span> - can't risk him being found like this.</p>
+            <p>Nora wants to abandon everything. Tommy's spooked. But Noah thinks we just need to be more careful with the timing.</p>
+        </div>
+        <div class="margin-note">Never again without proper preparation!</div>
+    </div>
+
+    <div class="entry">
+        <div class="entry-date">October 15, 1972</div>
+        <div class="entry-text">
+            <p>Spent week studying Heinrich's notes more carefully. The ritual requires <span class="underlined">NEW MOON</span> - explains why October 7th was a disaster (waxing moon). Next opportunity: November 6th.</p>
+            <p>Noah calculated the exact geometric requirements. Ordered <span class="important">7 obsidian pillars</span> from specialty supplier in Minneapolis - $2,400. Tommy arranged transport through his "connections." No questions asked.</p>
+            <p>Milton is stable but still incoherent. We're keeping him fed and warm at the lodge. He'll be perfect for the real ritual.</p>
+        </div>
+    </div>
+
+    <div class="entry">
+        <div class="entry-date">October 28, 1972</div>
+        <div class="entry-text">
+            <p>Basement preparations complete. The seven pillars are arranged exactly per Heinrich's diagrams. Noah double-checked every angle with surveyor's equipment. The geometric pattern is... unsettling to look at directly.</p>
+            <p>Practiced the Latin pronunciations. Nora has the best accent - her university training shows. <span class="crossed-out">Tommy still sounds like he's ordering pizza</span> We all need to recite in perfect unison.</p>
+            <p>8 days until new moon. Everything is ready.</p>
+        </div>
+    </div>
+
+    <div class="entry">
+        <div class="entry-date">November 5, 1972</div>
+        <div class="entry-text">
+            <p>Final preparations tomorrow night. We'll meet at the distillery at 2 AM, move Milton to position by 3 AM. The ritual must begin at exactly <span class="important">3:33 AM</span> according to Heinrich's notes.</p>
+            <p>Each of us has our silver pins, ritual knives for the blood component, and memorized our parts of the invocation. Nora seemed nervous at dinner tonight - asked me three times about the "escape routes" from the basement. Just pre-ritual jitters, I'm sure.</p>
+            <p><span class="underlined">Tomorrow we see beyond the veil of time itself.</span></p>
+        </div>
+        <div class="margin-note">Last entry - J.B.</div>
+    </div>
+</div>
+</body>
+</html>
